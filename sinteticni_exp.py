@@ -4,7 +4,7 @@ import numpy as np
 from scipy.signal import butter, filtfilt, hilbert, lfilter, sosfilt, sosfreqz
 from scipy.fftpack import fft
 
-#Direct input
+
 plt.rcParams['text.latex.preamble']=[r"\usepackage{lmodern}"]
 #Options
 params = {'text.usetex' : True,
@@ -77,7 +77,7 @@ plt.savefig('sint_x5.pdf',dpi=1000)
 
 lowcut= 700
 highcut= 900
-####################filter definition za etaloneee#######################
+
 
 
 def butter_bandpass(lowcut, highcut, fs, order=4):
